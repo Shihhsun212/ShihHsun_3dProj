@@ -1,3 +1,4 @@
+# This is just a demo for UCSB 2025 Capstone Project
 # Pipepine : Feature Extraction → Pair Generation → Filtering (Doppelgangers++) → Feature Matching → Reconstruction
 # Setup
 
@@ -63,3 +64,33 @@ python -m hloc.match_features \
   --conf superglue
 ## Step 5: Reconstruction
 
+## Citing
+@misc{xiangli2024doppelgangersimprovedvisualdisambiguation,
+      title={Doppelgangers++: Improved Visual Disambiguation with Geometric 3D Features}, 
+      author={Yuanbo Xiangli and Ruojin Cai and Hanyu Chen and Jeffrey Byrne and Noah Snavely},
+      year={2024},
+      eprint={2412.05826},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.05826}, 
+}
+
+@inproceedings{sarlin2019coarse,
+  title     = {From Coarse to Fine: Robust Hierarchical Localization at Large Scale},
+  author    = {Paul-Edouard Sarlin and
+               Cesar Cadena and
+               Roland Siegwart and
+               Marcin Dymczyk},
+  booktitle = {CVPR},
+  year      = {2019}
+}
+
+@inproceedings{sarlin2020superglue,
+  title     = {{SuperGlue}: Learning Feature Matching with Graph Neural Networks},
+  author    = {Paul-Edouard Sarlin and
+               Daniel DeTone and
+               Tomasz Malisiewicz and
+               Andrew Rabinovich},
+  booktitle = {CVPR},
+  year      = {2020},
+}
