@@ -18,7 +18,7 @@ pip install -r requirements.txt
 pip install -r   dust3r/requirements.txt   
 pip install -r  dust3r/requirements_optional.txt  
 
-HLoc: https://github.com/cvg/Hierarchical-Localization
+HLoc: https://github.com/cvg/Hierarchical-Localization  
 **Your folder should look like this(dont clone HLoc into DP++)**
 >your_project/  
 ├── dataset/  
