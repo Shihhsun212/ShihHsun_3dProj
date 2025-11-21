@@ -9,14 +9,14 @@
 ### Follow setup instructions:
 Doppelgangers++: https://github.com/doppelgangers25/doppelgangers-plusplus  
 >git clone --recursive https://github.com/doppelgangers25/doppelgangers-plusplus.git 
-cd doppelgangers-plusplus
+cd doppelgangers-plusplus. 
 
->conda create -n doppelgangers_pp python=3.11 cmake=3.14.0
-conda activate doppelgangers_pp 
-conda install pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia  # use the correct version of cuda for your system
-pip install -r requirements.txt
-pip install -r dust3r/requirements.txt
-pip install -r dust3r/requirements_optional.txt
+>conda create -n doppelgangers_pp python=3.11 cmake=3.14.0. 
+conda activate doppelgangers_pp/
+conda install pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia  # use the correct version of cuda for your system/
+pip install -r requirements.txt/
+pip install -r dust3r/requirements.txt/
+pip install -r dust3r/requirements_optional.txt/
 
 HLoc: https://github.com/cvg/Hierarchical-Localization
 
