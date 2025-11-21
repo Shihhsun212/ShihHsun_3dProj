@@ -12,7 +12,7 @@ Folder should ended up like this
 
 Using the pretrained model  
   Download checkpoint-dg+visym.pth from https://huggingface.co/doppelgangers25/doppelgangers_plusplus/tree/main  
-  place the file
+  place the file  
     |---data  
       |---doppelgangers-plusplus  
         |---checkpoints  
