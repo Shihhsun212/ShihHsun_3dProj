@@ -3,7 +3,7 @@
 
 
 ### 1. Install Dependencies
-### 2. Follow setup instructions:
+### Follow setup instructions:
 Doppelgangers++: https://github.com/doppelgangers25/doppelgangers-plusplus  
 HLoc: https://github.com/cvg/Hierarchical-Localization
 
@@ -18,10 +18,10 @@ HLoc: https://github.com/cvg/Hierarchical-Localization
 └── Hierarchical-Localization/  
     └── ...  
     
-### 3.Download checkpoint-dg+visym.pth and place in(this is the pretrained model):
+### 2.Download checkpoint-dg+visym.pth from https://huggingface.co/doppelgangers25/doppelgangers_plusplus/tree/main and place in(this is the pretrained model) 
 >doppelgangers-plusplus/checkpoints/checkpoint-dg+visym.pth
 
-### 4.downlaod filter_pairs.py and place in
+### 3.downlaod filter_pairs.py and place in
 >doppelgangers-plusplus/
 
 # Usage
