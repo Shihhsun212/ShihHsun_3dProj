@@ -2,7 +2,7 @@
 # Pipepine : Feature Extraction → Pair Generation → Filtering (Doppelgangers++) → Feature Matching → Reconstruction
 # Setup
 
-![Screenshot of sparse cloud of KITP without using dp++](/comp.png)
+![Screenshot of sparse cloud of KITP without using dp++](/co0mp.png)
 
 
 ### 1. Install Dependencies
