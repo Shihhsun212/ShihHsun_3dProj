@@ -45,7 +45,7 @@ NetVLAD features (for retrieval)
   --output outputs/pairs.txt \
   --num_matched 20
 
-##Filtering with Dp++
+## Filtering with Dp++
 >cd ../doppelgangers-plusplus  
 python filter_pairs.py \
   --images ../dataset/your_images \
