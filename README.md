@@ -1,8 +1,7 @@
 Pipeline
 Matching Pair using HLoc -> Filtering with Dp++ -> Reconstruct the sparse model using fitered-pairs  
 
-follow instruction on https://github.com/doppelgangers25/doppelgangers-plusplus    
-set up enviroment   
+follow instruction on https://github.com/doppelgangers25/doppelgangers-plusplus set up enviroment   
 clone https://github.com/cvg/Hierarchical-Localization  
 
 Folder should ended up like this
