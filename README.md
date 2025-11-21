@@ -17,5 +17,13 @@ Using the pretrained model
       |---doppelgangers-plusplus  
         |---checkpoints  
 
+Place the filter_pairs(filtering code using Dp++) and place it under 
+|---data  
+    |---doppelgangers-plusplus  
+
+Run feature matching using HLoc   
+Filtering with filter_pairs(Please change the directories inside the code) 
+Reconstruct the model using the filter_paired
+
 
     
