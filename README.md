@@ -1,28 +1,59 @@
--#Setup
-##Feature Extraction → Pair Generation → Filtering (Doppelgangers++) → Feature Matching → Reconstruction
+# Pipepine : Feature Extraction → Pair Generation → Filtering (Doppelgangers++) → Feature Matching → Reconstruction
+# Setup
 
-###1. Install Dependencies
-###2. Follow setup instructions:
-Doppelgangers++: https://github.com/doppelgangers25/doppelgangers-plusplus
+
+### 1. Install Dependencies
+### 2. Follow setup instructions:
+Doppelgangers++: https://github.com/doppelgangers25/doppelgangers-plusplus  
 HLoc: https://github.com/cvg/Hierarchical-Localization
 
-your_project/
-├── dataset/
-│   └── your_images/
-├── doppelgangers-plusplus/
-│   ├── checkpoints/
-│   │   └── checkpoint-dg+visym.pth
-│   ├── filter_pairs.py          # Add this script
-│   └── ...
-└── Hierarchical-Localization/
-    └── ...
+>your_project/  
+├── dataset/  
+│   └── your_images/  
+├── doppelgangers-plusplus/  
+│   ├── checkpoints/  
+│   │   └── checkpoint-dg+visym.pth  
+│   ├── filter_pairs.py          # Add this script  
+│   └── ...  
+└── Hierarchical-Localization/  
+    └── ...  
     
-###3.Download checkpoint-dg+visym.pth and place in(this is the pretrained model):
-doppelgangers-plusplus/checkpoints/checkpoint-dg+visym.pth
+### 3.Download checkpoint-dg+visym.pth and place in(this is the pretrained model):
+>doppelgangers-plusplus/checkpoints/checkpoint-dg+visym.pth
 
-###4.downlaod filter_pairs.py and place in
-doppelgangers-plusplus/
+### 4.downlaod filter_pairs.py and place in
+>doppelgangers-plusplus/
 
-#Usage
-Navigate to HLoc directory:
+# Usage
+## Navigate to HLoc directory:
+## Step 1: Extract Features
+ SuperPoint features  
+>python -m hloc.extract_features \
+  --image_dir ../dataset/your_images \
+  --export_dir outputs \
+  --conf superpoint_max
+
+NetVLAD features (for retrieval)  
+>python -m hloc.extract_features \
+  --image_dir ../dataset/your_images \
+  --export_dir outputs \
+  --conf netvlad
+
+## Pair Generation
+>python -m hloc.pairs_from_retrieval \
+  --descriptors outputs/global-feats-netvlad.h5 \
+  --output outputs/pairs.txt \
+  --num_matched 20
+
+##Filtering with Dp++
+>cd ../doppelgangers-plusplus  
+python filter_pairs.py \
+  --images ../dataset/your_images \
+  --pairs ../Hierarchical-Localization/outputs/pairs.txt \
+  --output ../Hierarchical-Localization/outputs/pairs-filtered.txt \
+  --checkpoint checkpoints/checkpoint-dg+visym.pth \
+  --threshold 0.8
+
+## Step 4: Match Filtered Pairs
+## Step 5: Reconstruction
 
