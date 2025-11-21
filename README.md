@@ -1,4 +1,4 @@
-#Setup
+-#Setup
 ##Feature Extraction → Pair Generation → Filtering (Doppelgangers++) → Feature Matching → Reconstruction
 
 ###1. Install Dependencies
