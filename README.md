@@ -55,5 +55,11 @@ python filter_pairs.py \
   --threshold 0.8
 
 ## Step 4: Match Filtered Pairs
+>cd ../Hierarchical-Localization\
+python -m hloc.match_features \
+  --pairs outputs/pairs-filtered.txt \
+  --features feats-superpoint-n4096-rmax1600.h5 \
+  --export_dir outputs \
+  --conf superglue
 ## Step 5: Reconstruction
 
