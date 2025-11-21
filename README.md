@@ -1,4 +1,4 @@
-# This is just a demo for UCSB 2025 Capstone Project
+
 # Pipepine : Feature Extraction → Pair Generation → Filtering (Doppelgangers++) → Feature Matching → Reconstruction
 # Setup
 
